@@ -9,13 +9,21 @@
 import Foundation
 
 let myCar = Car()
-
 print("Car Type: \(myCar.carType)")
 print(myCar.numberOfSeats)
 print(myCar.color)
 print()
 
 let myOtherCar = Car(customerChosenColor: "Blue")
-print("Car Type: \(myCar.carType)")
-print(myCar.numberOfSeats)
-print(myCar.color)
+print("Car Type: \(myOtherCar.carType)")
+print(myOtherCar.numberOfSeats)
+print(myOtherCar.color)
+print()
+
+let myOtherOtherCar = Car(customerColor: "Batman", customerNumberOfSeats: 2)
+print("Car Type: \(myOtherOtherCar.carType)")
+print(myOtherOtherCar.numberOfSeats)
+print(myOtherOtherCar.color)
+print()
+
+myOtherOtherCar.drive()
